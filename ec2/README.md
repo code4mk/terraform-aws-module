@@ -17,6 +17,8 @@ module "public_ec2" {
 }
 ```
 
+* [ubuntu aws ami lists](https://cloud-images.ubuntu.com/locator/ec2/)
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
