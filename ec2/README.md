@@ -1,4 +1,21 @@
-# ec2 module.
+# AWS EC2 module
+module create aws ec2 
+
+# Usage
+
+```bash
+module "public_ec2" {
+  source        = "github.com/code4mk/terraform-aws-module/ec2"
+  project_name  = "your-project-name"
+  ami           = "desired-region-ami"
+  instance      = "t2.micro"
+  subnet_id     = ""
+  key_pair_name = "your-key-pair"
+  tag_name      = "tag-name"
+  is_public_ip  = false
+  security_groups_id = []
+}
+```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
